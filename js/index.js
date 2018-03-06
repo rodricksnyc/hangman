@@ -9,7 +9,7 @@ let wrongLetters = [];
 let alreadyGuessed = [];
 let win = 0;
 let loss = 0;
-let guessesLeft = 10;
+let guessesLeft = 9;
 
 
 // var allAudios = document.querySelectorAll('audio');
@@ -36,7 +36,7 @@ function startGame() {
   dashes = lettersinWord.length;
 
 
-  guessesLeft = 10;
+  guessesLeft = 9;
   // wrongLetters = [];
   dashesandLetters = [];
 
@@ -111,7 +111,7 @@ function roundComplete() {
  console.log("Win count: " + win + "| Loss count: " + loss + "Guesses Left: " + guessesLeft);
  document.getElementById("guessesLeft").innerHTML = guessesLeft;
 
- if(letters.toString() === dashesandLetters.toString()) {
+ if(animal.toString() === dashesandLetters.toString()) {
      		win++;
      		alert("You win!!");
      		document.getElementById('win').innerHTML = win;
