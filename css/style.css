@@ -1,0 +1,46 @@
+.jumbotron {
+text-align: center;
+background: black;
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
+body {
+  background-color: black;
+}
+.words {
+  color: magenta;
+  font-family: chalkduster;
+  font-weight: 100;
+  font-size: 26px;
+  text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f, 0 0 1em #f0f, 0 0 1.2em #f0f;
+}
+audio {
+  display: none;
+}
+#words2 {
+  color: magenta;
+  font-family: chalkduster;
+  font-weight: 100;
+  font-size: 18px;
+  text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f, 0 0 1em #f0f, 0 0 1.2em #f0f;
+}
+.category {
+  border-bottom: 1px dashed magenta;
+  margin-bottom: 10px;
+  width: 306px;
+  text-align:justify;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 80px;
+  color: hotpink;
+  font-family: chalkduster;
+  font-weight: 100;
+  text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #ffa74d, 0 0 0.6em #ffa74d, 0 0 0.8em #ffa74d, 0 0 1em #ffa74d, 0 0 1.2em #ffa74d;
+}
+
+h3 {
+  margin-left: 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet prefetch' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Hangman</title>
+</head>
+<body>
+
+<div class="container">
+<div class="jumbotron jumbotron-fluid">
+<video width="500" height="300" controls="false" autoplay loop>
+<source src="img/giphy.mp4" type="video/mp4"/>
+</video>
+<audio controls autoplay loop><source src="audio/atarigame.wav" type="audio/wav"></audio>
+	<div class="col-lg-12">
+		<img src="img/hangman.png" class="img-fluid">
+	</div>
+<div class="col-lg-12">
+		<div id="words2">Pause Music</div>
+	<div>
+	</div>
+	</div>
+</div>
+
+<div class="container words">
+	<div class="row">
+		<div class="col-lg-10">
+			<div class="category">Category is Animals</div>
+			<div class="col-lg-10">
+			<div class="row">
+			<div>Current Word to Guess :</div>
+			<h3 id="#animal"></h3>
+		</div>
+	</div>
+			<div>Letters Already Guessed :<span id="wrongLetters"></span></div>
+			<div id="guessesLeft">Number of Guesses Left :</div>
+		</div>
+
+			<div class="col-lg-2">
+				<br>
+				<br>
+
+				<div>Wins :<span id="win"></span></div>
+				<div>Losses :<span id="loss"></span></div>
+			</div>
+
+
+<div class="container text-center">
+
+<div class="col-lg-12">
+<p>	&copy; 1986</p>
+</div>
+</div>
+
+
+
+<script src="js/index.js"></script>
+</body>
