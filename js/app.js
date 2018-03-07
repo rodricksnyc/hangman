@@ -1,4 +1,4 @@
-const wordOptions = ["zebra", "giraffe", "monkey", "elephant","kangaroo", "bobcat", "leopard", "rabbit", "wolf", "tiger", "donkey", "jaguar"];
+const wordOptions = ["zebra", "giraffe", "monkey", "elephant","kangaroo", "bobcat", "leopard", "rabbit", "wolf", "tiger", "donkey", "jaguar", "squirrel", "rhinoceros", "goose", "penguin", "turtle", "raccoon", "ferret", "antelope", "mouse", "chicken", "camel"];
 
 var animal = ""; //when select word at random from the wordList
 
@@ -90,18 +90,20 @@ function roundComplete() {
         console.log(lettersInChosenWord);
 
     	if(lettersInChosenWord.join(" ") === dashesandLetters.join(" ")){
-    		win++;
         var audioWin = document.getElementById("GameWin");
         audioWin.play();
-    		alert("You win!!");
+        win++;
         document.getElementById('win').innerHTML = win;
+        alert("You win!!");
     		startGame();
     	} else if(guessesLeft === 0){
-    		document.getElementById('loss').innerHTML = loss++;
-    		document.getElementById('wrongLetters').innerHTML = " ";
         var audioLose = document.getElementById("GameLose");
         audioLose.play();
+    		document.getElementById('loss').innerHTML = loss++;
+    		document.getElementById('wrongLetters').innerHTML = " ";
+
     		alert("You lose!");
+
         startGame();
     	}
 
