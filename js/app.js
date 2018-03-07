@@ -93,23 +93,20 @@ function roundComplete() {
     		win++;
         var audioWin = document.getElementById("GameWin");
         audioWin.play();
-    		swal("You win!!");
-        $(".swal-modal").css('background-color', '#FF69B4')
-    		document.getElementById('win').innerHTML = win;
+    		alert("You win!!");
+        document.getElementById('win').innerHTML = win;
     		startGame();
     	} else if(guessesLeft === 0){
     		document.getElementById('loss').innerHTML = loss++;
     		document.getElementById('wrongLetters').innerHTML = " ";
         var audioLose = document.getElementById("GameLose");
         audioLose.play();
-    		swal("You lose!");
-        $(".swal-modal").css('background-color', '#FF69B4')
+    		alert("You lose!");
         startGame();
-
     	}
 
 };
-    startGame();
+startGame();
 
     document.onkeyup = function(){
 
