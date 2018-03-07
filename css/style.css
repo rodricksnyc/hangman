@@ -26,7 +26,7 @@ audio {
   font-weight: 100;
   font-size: 18px;
   margin-bottom: 0px;
-  text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f, 0 0 1em #f0f, 0 0 1.2em #f0f;
+  text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #ffa74d, 0 0 0.6em #ffa74d, 0 0 0.8em #ffa74d, 0 0 1em #ffa74d, 0 0 1.2em #ffa74d;
 }
 .category {
   border-bottom: 1px dashed magenta;
@@ -64,4 +64,10 @@ h3 {
   margin-top: 80px;
   margin-left: -60px;
   display: none;
+}
+#hangman {
+  font-size: 50px;
+  font-family: chalkduster;
+  color: #0033cc;
+  text-shadow: 0 0 0.5em #ffff00, 0 0 0.5em #ffff00, 0 0 0.5em #ffff00, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f, 0 0 1em #f0f, 0 0 1.2em #f0f;
 }
