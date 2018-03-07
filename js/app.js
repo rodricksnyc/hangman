@@ -11,7 +11,7 @@ var dashesandLetters = []; //will store the right or wrong letters. stores under
 var wrongLetters = []; //stores the wrong letter guesses
 
 var win = 0;
-var loss = 1;
+var loss = 0;
 var guessesLeft = 9; //only have 9 lives
 
 
