@@ -89,18 +89,20 @@ function roundComplete() {
 
     	if(lettersInChosenWord.join(" ") === dashesandLetters.join(" ")){
     		win++;
+        var audioWin = document.getElementById("GameWin");
+        audioWin.play();
     		alert("You win!!");
     		document.getElementById('win').innerHTML = win;
     		startGame();
-    	}else if(guessesLeft === 0){
+    	} else if(guessesLeft === 0){
     		document.getElementById('loss').innerHTML = loss++;
     		document.getElementById('wrongLetters').innerHTML = " ";
-    		alert("you don't have anymore guesses left");
-
-    		startGame();
+        var audioLose = document.getElementById("GameLose");
+        audioLose.play();
+    		alert("You lose!");
+        startGame();
 
     	}
-
 
 };
     startGame();
