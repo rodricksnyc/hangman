@@ -66,7 +66,7 @@ h3 {
   display: none;
 }
 #hangman {
-  font-size: 50px;
+  font-size: 60px;
   font-family: chalkduster;
   color: #0033cc;
   text-shadow: 0 0 0.5em #ffff00, 0 0 0.5em #ffff00, 0 0 0.5em #ffff00, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f, 0 0 1em #f0f, 0 0 1.2em #f0f;
