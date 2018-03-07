@@ -1,4 +1,4 @@
-var wordOptions = ["giraffe", "elephant","kangaroo", "bobcat", "leopard", "rabbit", "zebra", "monkey", "wolf", "tiger", "donkey", "jaguar", "squirrel", "rhinoceros", "goose", "penguin", "turtle", "raccoon", "ferret", "antelope", "mouse", "chicken", "camel"];
+var wordOptions = ["giraffe", "elephant","kangaroo", "bobcat", "leopard", "rabbit", "zebra", "monkey", "wolf", "tiger", "donkey", "jaguar", "squirrel", "rhinoceros", "goose", "penguin", "raccoon", "ferret", "antelope", "mouse", "chicken", "camel"];
 
 var animal = ""; //when select word at random from the wordList
 
