@@ -111,17 +111,24 @@ function roundComplete() {
     	if(lettersInChosenWord.join(" ") === dashesandLetters.join(" ")){
         var audioWin = document.getElementById("GameWin");
         audioWin.play();
+        document.getElementById('wonAlert').style.display = 'block';
+        setTimeout(function(){
+            document.getElementById('wonAlert').style.display = "none";
+            },3000);
         win++;
         document.getElementById('win').innerHTML = win;
-        alert("You win!!");
+
     		startGame();
     	} else if(guessesLeft === 0){
         var audioLose = document.getElementById("GameLose");
         audioLose.play();
+          document.getElementById('loseAlert').style.display = 'block';
+          setTimeout(function(){
+            document.getElementById('loseAlert').style.display = "none";
+            },3000);
     		document.getElementById('loss').innerHTML = loss++;
     		document.getElementById('wrongLetters').innerHTML = " ";
 
-    		alert("You lose!");
 
         startGame();
     	}

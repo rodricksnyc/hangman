@@ -44,3 +44,21 @@ p {
 h3 {
   margin-left: 20px;
 }
+#wonAlert {
+  font-size: 120px;
+  color: #ffa74d;
+  z-index: 1;
+  position:absolute;
+  margin-top: 80px;
+  margin-left: -60px;
+  display: none;
+}
+#loseAlert{
+  font-size: 120px;
+  color: #ffa74d;
+  z-index: 1;
+  position:absolute;
+  margin-top: 80px;
+  margin-left: -60px;
+  display: none;
+}
