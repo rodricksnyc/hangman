@@ -1,4 +1,4 @@
-const wordOptions = ["zebra", "giraffe", "monkey", "elephant","kangaroo", "bobcat", "leopard", "rabbit", "wolf", "tiger", "donkey", "jaguar", "squirrel", "rhinoceros", "goose", "penguin", "turtle", "raccoon", "ferret", "antelope", "mouse", "chicken", "camel"];
+var wordOptions = ["giraffe", "elephant","kangaroo", "bobcat", "leopard", "rabbit", "zebra", "monkey", "wolf", "tiger", "donkey", "jaguar", "squirrel", "rhinoceros", "goose", "penguin", "turtle", "raccoon", "ferret", "antelope", "mouse", "chicken", "camel"];
 
 var animal = ""; //when select word at random from the wordList
 
@@ -17,10 +17,29 @@ var guessesLeft = 9; //only have 9 lives
 
 
 
+
+
 function startGame() {
     guessesLeft = 9;
     dashesandLetters = []; //makes empty at start
     wrongLetters = []; //makes empty at start
+
+Array.prototype.shuffle = function() {
+        var input = this;
+
+        for (var i = input.length-1; i >=0; i--) {
+
+            var randomIndex = Math.floor(Math.random()*(i+1));
+            var itemAtIndex = input[randomIndex];
+
+            input[randomIndex] = input[i];
+            input[i] = itemAtIndex;
+        }
+        return input;
+    }
+
+wordOptions.shuffle();
+
 
 	animal = wordOptions[Math.floor(Math.random() * animal.length)];
 	lettersInChosenWord = animal.split("");
