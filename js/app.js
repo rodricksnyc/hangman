@@ -15,6 +15,8 @@ var loss = 1;
 var guessesLeft = 9; //only have 9 lives
 
 
+
+
 function startGame() {
     guessesLeft = 9;
     dashesandLetters = []; //makes empty at start
@@ -91,7 +93,8 @@ function roundComplete() {
     		win++;
         var audioWin = document.getElementById("GameWin");
         audioWin.play();
-    		alert("You win!!");
+    		swal("You win!!");
+        $(".swal-modal").css('background-color', '#FF69B4')
     		document.getElementById('win').innerHTML = win;
     		startGame();
     	} else if(guessesLeft === 0){
@@ -99,7 +102,8 @@ function roundComplete() {
     		document.getElementById('wrongLetters').innerHTML = " ";
         var audioLose = document.getElementById("GameLose");
         audioLose.play();
-    		alert("You lose!");
+    		swal("You lose!");
+        $(".swal-modal").css('background-color', '#FF69B4')
         startGame();
 
     	}
