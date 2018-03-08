@@ -1,4 +1,4 @@
-var wordOptions = ["giraffe", "elephant","kangaroo", "bobcat", "leopard", "rabbit", "zebra", "monkey", "wolf", "tiger", "donkey", "jaguar", "squirrel", "rhinoceros", "goose", "penguin", "raccoon", "ferret", "antelope", "mouse", "chicken", "camel"];
+var wordOptions = ["giraffe", "elephant","kangaroo", "bobcat", "leopard", "rabbit", "zebra", "monkey", "wolf", "tiger", "donkey", "jaguar", "squirrel", "rhinoceros", "goose", "penguin", "raccoon", "ferret", "antelope", "mouse", "chicken", "camel", "deer", "caribou","buffalo", "baboon", "bull", "cheetah", "coyote", "chipmunk", "alpaca", "panther", "dingo", "dodo", "dolphin", "gazelle", "goat", "hippopotamus", "koala", "mongoose", "ostrich", "panda", "puma", "reindeer", "skunk", "turkey]", "walrus", "weasel", "puffin","caracal", "seal", "platypus", "hare", "flamingo", "gorilla", "hamster", "lemur", "okapi", "wombat", "wildebeest"];
 
 var animal = ""; //when select word at random from the wordList
 
@@ -40,11 +40,13 @@ Array.prototype.shuffle = function() {
 
 wordOptions.shuffle();
 
+console.log(wordOptions);
+
+
 
 	animal = wordOptions[Math.floor(Math.random() * animal.length)];
 	lettersInChosenWord = animal.split("");
 	dashes = lettersInChosenWord.length;
-
 
 	for (var i = 0; i < dashes; i++) {
 	    dashesandLetters.push("-");
@@ -56,6 +58,7 @@ wordOptions.shuffle();
     document.getElementById('wrongLetters').innerHTML = wrongLetters.join(" ");
 
 };
+
 
 function checkLetters(letter){ //function that gets input from the user
 
