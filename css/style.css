@@ -1,7 +1,7 @@
 .jumbotron {
 text-align: center;
 background: black;
-margin-top: 0px;
+margin-top: -50px;
 }
 video::-webkit-media-controls {
   display: none;
@@ -14,7 +14,8 @@ body {
   font-family: chalkduster;
   font-weight: 100;
   font-size: 26px;
-  margin-top: 0px;
+  margin-bottom: -12px;
+  margin-top: 3px;
   text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f, 0 0 1em #f0f, 0 0 1.2em #f0f;
 }
 audio {
@@ -25,7 +26,8 @@ audio {
   font-family: chalkduster;
   font-weight: 100;
   font-size: 18px;
-  margin-bottom: 0px;
+  margin-top: -10px;
+  margin-bottom: -50px;
   text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #ffa74d, 0 0 0.6em #ffa74d, 0 0 0.8em #ffa74d, 0 0 1em #ffa74d, 0 0 1.2em #ffa74d;
 }
 .category {
