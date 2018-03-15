@@ -50,21 +50,21 @@ h3 {
   margin-left: 20px;
 }
 #wonAlert {
-  font-size: 120px;
+  font-size: 125px;
   color: #1a53ff;
   z-index: 1;
   position:absolute;
   margin-top: 80px;
-  margin-left: -60px;
+  margin-left: -34px;
   display: none;
 }
 #loseAlert{
-  font-size: 120px;
+  font-size: 125px;
   color: #ff0000;
   z-index: 1;
   position:absolute;
   margin-top: 80px;
-  margin-left: -60px;
+  margin-left: -34px;
   display: none;
 }
 #hangman {
