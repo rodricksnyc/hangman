@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel='stylesheet prefetch' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
 <title>Hangman</title>
 </head>
@@ -10,8 +10,8 @@
 
 <div class="container">
 <div class="jumbotron jumbotron-fluid">
-  <div id="wonAlert" class="col-lg-12 words">You won!!!!</div>
-    <div id="loseAlert" class="col-lg-12 words">You lost!!!!</div>
+  <div id="wonAlert" class="col-lg-12 col-md-10 col-sm-4 words">You won!!!!</div>
+    <div id="loseAlert" class="col-lg-12 col-md-10 col-sm-4 words">You lost!!!!</div>
   <audio id="GameLose" src="audio/lose.wav"></audio>
     <audio id="GameWin" src="audio/yes.wav"></audio>
 <video width="540" height="304"  autoplay loop>
@@ -20,9 +20,9 @@
 <audio controls autoplay loop><source src="audio/atarigame.wav" type="audio/wav"></audio>
 	<div class="col-lg-12">
 		<!-- <img src="img/hangman.png" class="img-fluid"> -->
-    <div id="hangman" class="col-lg-12 words">DON'T HANG ME!</div>
+    <div id="hangman" class="col-lg-12 col-md-10 col-sm-4 words">DON'T HANG ME!</div>
 	</div>
-<div class="col-lg-12">
+<div class="col-lg-12 col-md-10 col-sm-4">
 		<div id="words2">Stop Music</div>
 	<div>
 	</div>
@@ -31,7 +31,7 @@
 
 <div class="container words">
 	<div class="row">
-		<div class="col-lg-10">
+		<div class="col-lg-10 col-md-6 col-sm-4">
 			<div class="category">Category is Animals</div>
 			<div class="col-lg-10">
 			<div class="row">
@@ -43,7 +43,7 @@
 			<div>Guesses Left : <span id="guessesLeft"></span></div>
 		</div>
 
-			<div class="col-lg-2">
+			<div class="col-lg-2 col-md-2 col-sm-2">
 				<br>
 				<br>
 
@@ -54,7 +54,7 @@
 
 <div class="container text-center">
 
-<div class="col-lg-12">
+<div class="col-lg-12 col-md-10 col-sm-4">
 <p>	&copy; 1986</p>
 </div>
 </div>
