@@ -17,8 +17,6 @@ var guessesLeft = 9; //only have 9 lives
 
 
 
-
-
 function startGame() {
     guessesLeft = 9;
     dashesandLetters = []; //makes empty at start
@@ -159,9 +157,9 @@ var reloadPage = function() {
 }
 
 
+
+
 var allAudios = document.querySelectorAll('audio');
-
-
 
 function stopAllAudio(){
  allAudios.forEach(function(audio){
