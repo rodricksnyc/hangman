@@ -156,7 +156,10 @@ var reloadPage = function() {
     startGame();
 }
 
-
+$('#words2').on('click', function() {
+  console.log("wefubweiufbiwu")
+  $('#changeAudio').remove();
+})
 
 
 var allAudios = document.querySelectorAll('audio');

@@ -12,51 +12,60 @@
 
 <div class="container-fluid">
 <div class="jumbotron jumbotron-fluid">
-    <audio autoplay="true" loop="true" src="audio/atari.wav"></audio>
-  <div id="wonAlert" class="col-lg-12 col-md-10 col-sm-4 words">You won!!!!</div>
-    <div id="loseAlert" class="col-lg-12 col-md-10 col-sm-4 words">You lost!!!!</div>
-  <audio id="GameLose" src="audio/lose.wav"></audio>
-    <audio id="GameWin" src="audio/yes.wav"></audio>
-<!-- <video width="540" height="304" autoplay loop>
-<source src="img/giphy.mp4" type="video/mp4"/>
-</video> -->
-<iframe src="https://giphy.com/embed/l0nR1C4LomifC" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen autoplay loop></iframe><p><a href="https://giphy.com/gifs/gone-l0nR1C4LomifC"></a></p>
+<embed id="changeAudio" src="audio/atari.wav" autostart="true" loop="infinite"
+  width="2" height="0">
+</embed>
 
-	<div class="col-lg-12 col-md-10 col-sm-4">
-		<!-- <img src="img/hangman.png" class="img-fluid"> -->
-    <div id="hangman" class="col-lg-12 col-md-10 col-sm-4 col-xs-4 words">DON'T HANG ME!</div>
-	</div>
-<div class="col-lg-12 col-md-10 col-sm-4">
+    <!-- <audio autoplay="true" loop="true" src="audio/win.wav"></audio> -->
+    <div id="wonAlert" class="col-lg-12 col-md-10 col-sm-4 words">You won!!!!</div>
+    <div id="loseAlert" class="col-lg-12 col-md-10 col-sm-4 words">You lost!!!!</div>
+    <audio id="GameLose" src="audio/lose.wav"></audio>
+    <audio id="GameWin" src="audio/yes.wav"></audio>
+
+
+<img src="img/giphy.gif" width="600">
+
+
+    <div id="hangman" class="words">DON'T HANG ME!</div>
+    <br>
 		<div id="words2">Stop Music</div>
-	<div>
-	</div>
+
 	</div>
 </div>
 
 <div class="container words">
 	<div class="row">
-		<div class="col-lg-10 col-md-6 col-sm-4">
-			<div class="category">Category is Animals
-      </div>
-			<div class="col-lg-10">
-			<div class="row">
-			<div>Current Word to Guess :</div>
-			<h3 id="#animal"></h3>
+		<div class="col-lg-4 col-lg-offset-4 col-lg-offset-6">
+			<div class="category">Category is Animals</div>
+    </div>
+  </div>
+
+    <div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+
+			<div style="margin-bottom:20px;">Current Word to Guess:</div>
+
+      <h3 id="#animal"></h3>
+
+
+
+
+			<div>Letters Already Guessed: <span id="wrongLetters"></span></div>
+			<div>Guesses Left: <span id="guessesLeft"></span></div>
 		</div>
-	</div>
-			<div>Letters Already Guessed :<span id="wrongLetters"></span></div>
-			<div>Guesses Left : <span id="guessesLeft"></span></div>
-		</div>
+
+
 
 			<div class="col-lg-2 col-md-2 col-sm-2">
 				<br>
 				<br>
 
-				<div>Wins :<span id="win"></span></div>
-				<div>Losses :<span id="loss"></span></div>
+				<div>Wins: <span id="win"></span></div>
+				<div>Losses: <span id="loss"></span></div>
 			</div>
-
-
+         </div>
+</div>
+<br><br><br><br>
 <div class="container text-center">
 
 <div class="col-lg-12 col-md-10 col-sm-4">

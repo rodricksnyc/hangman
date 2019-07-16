@@ -33,7 +33,7 @@ audio {
 .category {
   border-bottom: 1px dashed magenta;
   margin-bottom: 10px;
-  width: 306px;
+
   text-align:justify;
 }
 
@@ -45,10 +45,10 @@ p {
   font-weight: 100;
   text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #ffa74d, 0 0 0.6em #ffa74d, 0 0 0.8em #ffa74d, 0 0 1em #ffa74d, 0 0 1.2em #ffa74d;
 }
-
-h3 {
-  margin-left: 20px;
+#animal {
+  margin-top:40px;
 }
+
 #wonAlert {
   font-size: 125px;
   color: #1a53ff;
